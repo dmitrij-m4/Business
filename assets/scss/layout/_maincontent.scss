@@ -1,0 +1,59 @@
+.maincontent {
+    margin: rem(75px) 0 0 0;
+    @include flex;
+    justify-content: space-between;
+    @media (max-width: $md) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    &__text {
+        width: calc(50% - 65px);
+        margin: rem(40px) 0 0 0;
+        h1 {
+            color: #333333;
+            font-size: rem(72px);
+            letter-spacing: rem(-2px);
+            line-height: rem(80px);
+            margin: rem(10px) 0;
+        }
+        @media (max-width: $md) {
+            width: 100%;
+        }
+    }
+    &__text_name {
+        color: #eb5a43;
+        font-size: rem(19px);
+        letter-spacing: rem(3px);
+        line-height: rem(32px);
+    }
+    &__text_content {
+        color: #333333;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    &__text_button {
+        @include button;
+        margin: rem(40px) 0 0 0;
+        background-color: #eb5a43;
+        color: #fff;
+    }
+    &__text_button:hover {
+        background-color: #fff;
+        color: #eb5a43;
+    }
+    &__img {
+        width: calc(50% - 65px);
+        @media (max-width: $md) {
+            width: 100%;
+        }
+        img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@mixin button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    border: rem(1px) solid rgba(17, 17, 17, 0.3);
+    border-radius: rem(4px);
+    display: inline-block;
+    padding: rem(19px) rem(32px);
+}
